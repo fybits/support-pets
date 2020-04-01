@@ -1,0 +1,105 @@
+body {
+    font-family:  'Open Sans';
+}
+
+.header img {
+    display: block;
+    margin: 25px auto;
+    height: 38px;
+}
+
+.info {
+    background-color: #F2FAFD;
+    padding: 30px 0 33px 0;
+    border: 1px solid #E5F4F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.free-container {
+    margin: 25px 0;
+    width: fit-content;
+    border-top: 0.5px solid #7EC4CE;
+    border-bottom: 0.5px solid #7EC4CE;
+    padding: 16.8px 0 16.8px 0;
+}
+
+h2 {
+    font-size: 25px;
+    display: inline
+}
+
+.certificate {
+    height: 170px;
+    display: block;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 33px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+li {
+    display: flex;
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    align-self: center;
+    background-size: 20px;
+    background-image: url('/imgs/icon_check.png');
+}
+
+h4 {
+    font-size: 26px;
+    /* font-weight: 900; */
+}
+
+h4 .cents {
+    font-size: 21px;
+}
+
+.line-through {
+    position: relative;
+    margin-right: 10px;
+}
+
+.line-through::before {
+    content: '';
+    border-bottom: 3px solid #ed1c24;
+    width: 100px;
+    position: absolute;
+    right:-5px;
+    top: 50%;
+}
+
+.primary-color {
+    color: #3F9BBC;
+}
+.secondary-color {
+    color: #024360;
+}
