@@ -29,7 +29,7 @@
         </div>
         <img class="certificate" src="imgs/certificate.png" alt="">
         <h3 class="secondary-color">Don't Miss This Opportunity</h3>
-        <ul class="secondary-color">
+        <ul class="include-list secondary-color">
             <li>Free Official <b>&nbsp;ESA Vest</b></li>
             <li>Free Official <b>&nbsp;ID Card</b></li>
             <li>Free <b>&nbsp;ESA Certificate</b></li>
@@ -58,9 +58,20 @@
             <div class="caption">Seconds</div>
         </div>
     </div>
+    <div class="tabs" style="display: none;">
+        <div id="name" class="tab done">
+            <img src="/imgs/icon_complete.png" alt="">
+            <div class="caption">Name</div>
+        </div>
+        <div id="payment" class="tab">
+            <img src="/imgs/icon_step_2.png" alt="">
+            <div class="caption">Payment</div>
+        </div>
+    </div>
     <div class="form">
-        <h5 class="secondary-color">Who Should Receive This ESA?</h5>
-        <form>
+        <!-- First step form -->
+        <form id="name" class="w-100">
+            <h5 class="secondary-color">Who Should Receive This ESA?</h5>
             <div class="form-group">
                 <label for="firstname">First Name</label>
                 <input id="firstname" class="form-control" type="text" name="firstname">
@@ -77,18 +88,52 @@
                 <label for="phone">Phone Number</label>
                 <input id="phone" type="phone" class="form-control" type="text" name="phone">
             </div>
-            <button class="btn btn-submit" type="button">GET MY ESA FREEBIES </button>
+            <button class="btn btn-submit">CONTINUE</button>
+        </form>
+        <!-- Second step form -->
+        <form id="payment" class="w-100" style="display: none;">
+            <h5 class="secondary-color">Please enter your payment details</h5>
+            <div class="form-group">
+                <label for="system">Credit Card</label>
+                <!-- <input id="system" class="form-control" type="text" name="system"> -->
+                <div class="cc-container d-flex justify-content-between">
+                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
+                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
+                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
+                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Enter Card Number</label>
+                <input id="card-number" class="form-control" type="text" name="card-number">
+            </div>
+            <div class="form-group">
+                <label for="email">Month</label>
+                <input id="email" type="email" class="form-control" type="text" name="email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col no-gutters">
+                    <label for="phone">Year</label>
+                    <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                </div>
+                <div class="form-group col no-gutters">
+                    <label for="phone">CVC/CVV</label>
+                    <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                </div>
+            </div>
+            <button class="btn btn-submit">GET MY ESA FREEBIES</button>
         </form>
     </div>
     <div class="footer">
         <img class="certifications" src="/imgs/certifications.png" alt="">
     </div>
     
-    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="/js/main.js"></script>
 </body>
 </html>
