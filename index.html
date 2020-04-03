@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 940px)">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     
     <title>Hello, world!</title>
@@ -19,8 +20,10 @@
         <img src="imgs/supportpets-logo-300x65.png" alt="">
     </div>
     <div class="info">
-        <h1 class="primary-color">Anniversary
-            <span class="secondary-color">Huge sale!</span>
+        <h1>
+            <span class="primary-color">Anniversary </span>
+            <span class="secondary-color">Huge </span>
+            <span class="secondary-color">sale! </span>
         </h1>
         <div class="free-container">
             <h2 class="secondary-color">
@@ -58,71 +61,73 @@
             <div class="caption">Seconds</div>
         </div>
     </div>
-    <div class="tabs" style="display: none;">
-        <div id="name" class="tab done">
-            <img src="/imgs/icon_complete.png" alt="">
-            <div class="caption">Name</div>
-        </div>
-        <div id="payment" class="tab">
-            <img src="/imgs/icon_step_2.png" alt="">
-            <div class="caption">Payment</div>
-        </div>
-    </div>
     <div class="form">
-        <!-- First step form -->
-        <form id="name" class="w-100">
-            <h5 class="secondary-color">Who Should Receive This ESA?</h5>
-            <div class="form-group">
-                <label for="firstname">First Name</label>
-                <input id="firstname" class="form-control" type="text" name="firstname">
+        <div class="tabs" style="display: none;">
+            <div id="name" class="tab done">
+                <img src="/imgs/icon_complete.png" alt="">
+                <div class="caption">Name</div>
             </div>
-            <div class="form-group">
-                <label for="lastname">Last Name</label>
-                <input id="lastname" class="form-control" type="text" name="lastname">
+            <div id="payment" class="tab">
+                <img src="/imgs/icon_step_2.png" alt="">
+                <div class="caption">Payment</div>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input id="email" type="email" class="form-control" type="text" name="email">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input id="phone" type="phone" class="form-control" type="text" name="phone">
-            </div>
-            <button class="btn btn-submit">CONTINUE</button>
-        </form>
-        <!-- Second step form -->
-        <form id="payment" class="w-100" style="display: none;">
-            <h5 class="secondary-color">Please enter your payment details</h5>
-            <div class="form-group">
-                <label for="system">Credit Card</label>
-                <!-- <input id="system" class="form-control" type="text" name="system"> -->
-                <div class="cc-container d-flex justify-content-between">
-                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
-                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
-                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
-                    <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+        </div>
+        <div class="tabs-content">
+            <!-- First step form -->
+            <form id="name" class="w-100">
+                <h5 class="secondary-color">Who Should Receive This ESA?</h5>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" class="form-control" type="text" name="firstname">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="card-number">Enter Card Number</label>
-                <input id="card-number" class="form-control" type="text" name="card-number">
-            </div>
-            <div class="form-group">
-                <label for="email">Month</label>
-                <input id="email" type="email" class="form-control" type="text" name="email">
-            </div>
-            <div class="form-row">
-                <div class="form-group col no-gutters">
-                    <label for="phone">Year</label>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" class="form-control" type="text" name="lastname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" class="form-control" type="text" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
                     <input id="phone" type="phone" class="form-control" type="text" name="phone">
                 </div>
-                <div class="form-group col no-gutters">
-                    <label for="phone">CVC/CVV</label>
-                    <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                <button class="btn btn-submit">CONTINUE</button>
+            </form>
+            <!-- Second step form -->
+            <form id="payment" class="w-100" style="display: none;">
+                <h5 class="secondary-color">Please enter your payment details</h5>
+                <div class="form-group">
+                    <label for="system">Credit Card</label>
+                    <!-- <input id="system" class="form-control" type="text" name="system"> -->
+                    <div class="cc-container d-flex justify-content-between">
+                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
+                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
+                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
+                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+                    </div>
                 </div>
-            </div>
-            <button class="btn btn-submit">GET MY ESA FREEBIES</button>
-        </form>
+                <div class="form-group">
+                    <label for="card-number">Enter Card Number</label>
+                    <input id="card-number" class="form-control" type="text" name="card-number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Month</label>
+                    <input id="email" type="email" class="form-control" type="text" name="email">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col no-gutters">
+                        <label for="phone">Year</label>
+                        <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                    </div>
+                    <div class="form-group col no-gutters">
+                        <label for="phone">CVC/CVV</label>
+                        <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                    </div>
+                </div>
+                <button class="btn btn-submit">GET MY ESA FREEBIES</button>
+            </form>
+        </div>
     </div>
     <div class="footer">
         <img class="certifications" src="/imgs/certifications.png" alt="">

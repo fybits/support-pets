@@ -1,0 +1,129 @@
+.form {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid #DFDFE0;
+}
+
+.header img {
+    height: 50px;
+    margin: 30px auto;
+}
+
+.tabs-content {
+    padding: 0 66px;
+    border-bottom: none;
+}
+
+h1 {
+    font-size: 55px;
+    display: inline-flex;
+    white-space: pre;
+}
+
+h1 span:nth-child(1) {
+    order: 2;
+}
+h1 span:nth-child(2) {
+    order: 1;
+}
+h1 span:nth-child(3) {
+    order: 3;
+}
+h2, h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 30px;
+}
+h4 .cents {
+    font-size: 25px;
+}
+
+.countdown {
+    width: 552px;
+    height: 126px;
+    margin: 0 auto;
+    margin-top: -63px;
+}
+
+.digits .content {
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.caption {
+    font-size: 15px;
+}
+
+.info {
+    padding: 50px 0 93px 0;
+}
+.certificate {
+    height: 250px;
+}
+
+.line-through::before {
+    width: 116px;
+}
+
+.free-container {
+    margin-top: 30px;
+    padding: 0;
+    position: relative;
+    border: none;
+}
+
+.free-container::before, .free-container::after {
+    content: '';
+    border-bottom: 1px solid #7EC4CE;
+    width: 260px;
+    position: absolute;
+    top: 50%;
+}
+.free-container::before {
+    transform: translateX(calc(-100% - 30px));
+}
+.free-container::after {
+    transform: translateX(30px);
+}
+
+.include-list {
+    margin: 30px 0 38px 0;
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+    text-align: left;
+}
+
+label {
+    color: #004360;
+    font-size: 18px;
+    margin-bottom: 19px;
+}
+
+.form-group {
+    margin-bottom: 33px;
+}
+
+.form-control {
+    height: 70px;
+}
+
+.btn-submit {
+    width: 455px;
+    height: 71px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 6px;
+    margin-bottom: 39px;
+    display: block;
+}
+
+.certifications {
+    width: 518px;
+    margin-top: 39px;
+    margin-bottom: 16px;
+}
