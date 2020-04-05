@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 940px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     
     <title>Hello, world!</title>
@@ -62,19 +62,19 @@
         </div>
     </div>
     <div class="form">
-        <div class="tabs" style="display: none;">
-            <div id="name" class="tab done">
-                <img src="/imgs/icon_complete.png" alt="">
+        <div class="tabs w-100 d-none d-lg-flex">            
+            <a href="#name" onclick="return false;" class="tab active">
+                <img src="/imgs/icon_step_1.png" alt="">
                 <div class="caption">Name</div>
-            </div>
-            <div id="payment" class="tab">
+            </a>
+            <a href="#payment" onclick="return false;" class="tab hidden">
                 <img src="/imgs/icon_step_2.png" alt="">
                 <div class="caption">Payment</div>
-            </div>
+            </a>
         </div>
-        <div class="tabs-content">
+        <div class="tab-content">
             <!-- First step form -->
-            <form id="name" class="w-100">
+            <form id="name" class="w-100 tab-pane active">
                 <h5 class="secondary-color">Who Should Receive This ESA?</h5>
                 <div class="form-group">
                     <label for="firstname">First Name</label>
@@ -95,12 +95,11 @@
                 <button class="btn btn-submit">CONTINUE</button>
             </form>
             <!-- Second step form -->
-            <form id="payment" class="w-100" style="display: none;">
+            <form id="payment" class="w-100 tab-pane fade">
                 <h5 class="secondary-color">Please enter your payment details</h5>
                 <div class="form-group">
                     <label for="system">Credit Card</label>
-                    <!-- <input id="system" class="form-control" type="text" name="system"> -->
-                    <div class="cc-container d-flex justify-content-between">
+                    <div class="cc-container d-flex justify-content-between justify-content-md-start">
                         <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
                         <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
                         <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
@@ -111,20 +110,25 @@
                     <label for="card-number">Enter Card Number</label>
                     <input id="card-number" class="form-control" type="text" name="card-number">
                 </div>
-                <div class="form-group">
-                    <label for="email">Month</label>
-                    <input id="email" type="email" class="form-control" type="text" name="email">
+                <div class="form-group d-lg-none">
+                    <label for="month">Month</label>
+                    <input id="month" class="form-control" type="text" name="month">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col no-gutters">
-                        <label for="phone">Year</label>
-                        <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                    <div id="month" class="form-group col no-gutters d-none d-lg-block">
+                        <label for="month">Month</label>
+                        <input id="month" class="form-control" type="text" name="month">
                     </div>
-                    <div class="form-group col no-gutters">
-                        <label for="phone">CVC/CVV</label>
-                        <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                    <div id="year" class="form-group col no-gutters">
+                        <label for="year">Year</label>
+                        <input id="year" class="form-control" type="text" name="year">
+                    </div>
+                    <div id="cvc" class="form-group col no-gutters">
+                        <label for="cvc">CVC/CVV</label>
+                        <input id="cvc" class="form-control" type="text" name="cvc">
                     </div>
                 </div>
+                <h5 class="secondary-color mt-0 align-self-center text-center">* Avoid submitting orders multiple times</h5>
                 <button class="btn btn-submit">GET MY ESA FREEBIES</button>
             </form>
         </div>
