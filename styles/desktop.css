@@ -32,6 +32,7 @@
     position: relative;
 }
 .tab.hidden {
+    display: flex;
     border: none;
     background-color: white;
     border-bottom: 1px solid #DFDFE0;
@@ -123,7 +124,7 @@ h5 {
 label {
     color: #004360;
     font-size: 18px;
-    margin-bottom: 19px;
+    margin-bottom: 8px;
 }
 
 .form-group {
