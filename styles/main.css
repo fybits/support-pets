@@ -68,7 +68,7 @@ h3 {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-right: 18px;
+    margin-right: 10px;
     align-self: center;
     background-size: 20px;
     background-image: url('../imgs/icon_check.png');
@@ -161,9 +161,7 @@ label {
 .secondary-color {
     color: #024360;
 }
-.col {
-    /* padding: 0 15px !important; */
-}
+
 .tab.hidden {
     display: none;
 }
@@ -216,6 +214,7 @@ label {
     background-color: white;
     border-right: 1px solid #DFDFE0;
     border-bottom: 1px solid #DFDFE0;
+    border-left: 1px solid #DFDFE0;
     color: #A4A7A7;
 }
 .tab.done:hover {
