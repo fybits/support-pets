@@ -330,6 +330,7 @@ label {
     align-items: center;
     background-color: #364C61;
     height: 160px;
+    padding-top: 20px;
 }
 .footer img {
     width: 230px;
@@ -390,7 +391,7 @@ label {
 }
 @media (min-width: 450px) {
     .form-block {
-        width: 70%;
+        width: 80%;
     }
     ul.order-content {
         padding: 20px 30px;
@@ -402,11 +403,5 @@ label {
     }
     .cc-container .btn {
         margin-right: 20px;
-    }
-}
-@media (min-width: 1024px) {
-    .form-block {
-        flex-direction: row;
-        width: 55%;
     }
 }
