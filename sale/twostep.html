@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)">
+    <!-- <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)"> -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     
     <title>Hello, world!</title>
@@ -19,122 +19,180 @@
     <div class="header">
         <img src="imgs/supportpets-logo-300x65.png" alt="">
     </div>
+    <div class="subheader">
+        <h1>Hurry order now!</h1>
+        <span>Get Approved while doctors are available</span>
+        <div class="dotted-line"></div>
+        <span class="off">Get 50% OFF Today!</span>
+    </div>
     <div class="info">
-        <h1>
-            <span class="primary-color">Anniversary </span>
-            <span class="secondary-color">Huge </span>
-            <span class="secondary-color">sale! </span>
-        </h1>
-        <div class="free-container">
-            <h2 class="secondary-color">
-                Get Everything for <strong>Free</strong>
-            </h2>
+        <span class="strong">Expires In:</span>
+        <div class="countdown">
+            <div class="digits">
+                <div class="content">00</div>
+                <div class="caption">Days</div>
+            </div>
+            <div class="digits">
+                <div class="content">00</div>
+                <div class="caption">Hours</div>
+            </div>
+            <div class="digits">
+                <div class="content">00</div>
+                <div class="caption">Minutes</div>
+            </div>
+            <div class="digits">
+                <div class="content">00</div>
+                <div class="caption">Seconds</div>
+            </div>
         </div>
-        <img class="certificate" src="imgs/certificate.png" alt="">
-        <h3 class="secondary-color">Don't Miss This Opportunity</h3>
-        <ul class="include-list secondary-color">
-            <li>Free Official <b>&nbsp;ESA Vest</b></li>
-            <li>Free Official <b>&nbsp;ID Card</b></li>
-            <li>Free <b>&nbsp;ESA Certificate</b></li>
+        <div class="double-line"></div>
+        <span class="strong">Today's Order Includes:</span>
+        <ul class="order-content">
+            <li>
+                <div class="item"><strong>54% OFF</strong> (Regular $194)</div>
+                <div class="cost"><strong>$89.00</strong></div>
+            </li>
+            <li>
+                <div class="item">ESA Housing</div>
+                <div class="cost">Included</div>
+            </li>
+            <li>
+                <div class="item">ESA Travel</div>
+                <div class="cost">Included</div>
+            </li>
+            <li>
+                <div class="item">48-Hour Delivery</div>
+                <div class="cost free">Free</div>
+            </li>
+            <li>
+                <div class="item">2nd Pet Included</div>
+                <div class="cost free">Free</div>
+            </li>
         </ul>
-        <h4 class="primary-color">
-            <span class="secondary-color line-through">$194.<span class="cents">00</span></span>
-            <span>Only</span>
-            <span class="secondary-color">$97.<span class="cents">00</span></span>
-        </h4>
+        <div class="strong">Sale while doctors available</div>
+        <div class="strong regular-price">Regularly $194</div>
+        <div class="strong">Today only $97.00</div>
     </div>
-    <div class="countdown">
-        <div class="digits">
-            <div class="content">00</div>
-            <div class="caption">Days</div>
-        </div>
-        <div class="digits">
-            <div class="content">00</div>
-            <div class="caption">Hours</div>
-        </div>
-        <div class="digits">
-            <div class="content">00</div>
-            <div class="caption">Minutes</div>
-        </div>
-        <div class="digits">
-            <div class="content">00</div>
-            <div class="caption">Seconds</div>
-        </div>
-    </div>
-    <div class="form" id="form">
-        <div class="tabs w-100 d-none d-lg-flex">            
-            <a href="#name" class="tab active">
-                <img src="imgs/icon_step_1.png" alt="">
-                <div class="caption">Name</div>
-            </a>
-            <a href="#payment" class="tab hidden">
-                <img src="imgs/icon_step_2.png" alt="">
-                <div class="caption">Payment</div>
-            </a>
-        </div>
-        <div class="tab-content">
-            <!-- First step form -->
-            <form id="name" class="w-100 tab-pane fade show active">
-                <h5 class="secondary-color">Who Should Receive This ESA?</h5>
-                <div class="form-group">
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" class="form-control" type="text" name="firstname">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name</label>
-                    <input id="lastname" class="form-control" type="text" name="lastname">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" class="form-control" type="text" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="phone" class="form-control" type="text" name="phone">
-                </div>
-                <button class="btn btn-submit">Continue</button>
-            </form>
-            <!-- Second step form -->
-            <form id="payment" class="w-100 tab-pane fade">
-                <h5 class="secondary-color">Please enter your payment details</h5>
-                <div class="form-group">
-                    <label for="system">Credit Card</label>
-                    <div class="cc-container d-flex justify-content-between justify-content-md-start">
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+    
+    <div class="form-block">
+        <div class="form" id="form">
+            <div class="tabs w-100 d-none d-lg-flex">            
+                <a href="#name" class="tab active">
+                    <img src="imgs/icon_step_1.png" alt="">
+                    <div class="caption">Name</div>
+                </a>
+                <a href="#payment" class="tab hidden">
+                    <img src="imgs/icon_step_2.png" alt="">
+                    <div class="caption">Payment</div>
+                </a>
+            </div>
+            <div class="tab-content">
+                <!-- First step form -->
+                <form id="name" class="w-100 tab-pane fade show active">
+                    <h5 class="secondary-color">Who Should Receive This ESA?</h5>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" class="form-control" type="text" name="firstname">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="card-number">Enter Card Number</label>
-                    <input id="card-number" class="form-control" type="text" name="card-number">
-                </div>
-                <div class="form-group d-lg-none">
-                    <label for="month">Month</label>
-                    <input id="month" class="form-control" type="text" name="month">
-                </div>
-                <div class="form-row">
-                    <div id="month" class="form-group col no-gutters d-none d-lg-block">
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" class="form-control" type="text" name="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" class="form-control" type="text" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="phone" class="form-control" type="text" name="phone">
+                    </div>
+                    <button class="btn btn-submit">Continue</button>
+                </form>
+                <!-- Second step form -->
+                <form id="payment" class="w-100 tab-pane fade">
+                    <h5 class="secondary-color">Please enter your payment details</h5>
+                    <div class="form-group">
+                        <label for="system">Credit Card</label>
+                        <div class="cc-container d-flex justify-content-between justify-content-md-start">
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Enter Card Number</label>
+                        <input id="card-number" class="form-control" type="text" name="card-number">
+                    </div>
+                    <div class="form-group d-lg-none">
                         <label for="month">Month</label>
                         <input id="month" class="form-control" type="text" name="month">
                     </div>
-                    <div id="year" class="form-group col no-gutters">
-                        <label for="year">Year</label>
-                        <input id="year" class="form-control" type="text" name="year">
+                    <div class="form-row">
+                        <div id="month" class="form-group col no-gutters d-none d-lg-block">
+                            <label for="month">Month</label>
+                            <input id="month" class="form-control" type="text" name="month">
+                        </div>
+                        <div id="year" class="form-group col no-gutters">
+                            <label for="year">Year</label>
+                            <input id="year" class="form-control" type="text" name="year">
+                        </div>
+                        <div id="cvc" class="form-group col no-gutters">
+                            <label for="cvc">CVC/CVV</label>
+                            <input id="cvc" class="form-control" type="text" name="cvc">
+                        </div>
                     </div>
-                    <div id="cvc" class="form-group col no-gutters">
-                        <label for="cvc">CVC/CVV</label>
-                        <input id="cvc" class="form-control" type="text" name="cvc">
-                    </div>
-                </div>
-                <h5 class="secondary-color d-none d-lg-block mt-0 align-self-center text-center">* Avoid submitting orders multiple times</h5>
-                <button class="btn btn-submit">Get my ESA freebies</button>
-            </form>
+                    <h5 class="secondary-color d-none d-lg-block mt-0 align-self-center text-center">* Avoid submitting orders multiple times</h5>
+                    <button class="btn btn-submit">Get my ESA freebies</button>
+                </form>
+            </div>
+        </div>
+        <div class="feedback">
+            <h5 class="secondary-color">People love their ESA</h5>
+            <div class="feedback-card">
+                <img src="" alt="" class="avatar">
+                <p class="name">Will D.</p>
+                <p class="place">Kansas City, MO</p>
+                <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
+            </div>
+            <div class="feedback-card">
+                <img src="" alt="" class="avatar">
+                <p class="name">Will D.</p>
+                <p class="place">Kansas City, MO</p>
+                <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
+            </div>
+            <div class="feedback-card">
+                <img src="" alt="" class="avatar">
+                <p class="name">Will D.</p>
+                <p class="place">Kansas City, MO</p>
+                <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
+            </div>
         </div>
     </div>
+    <img src="imgs/partners.png" alt="" class="partners">
+    <div class="bottom">
+        <div class="double-line"></div>
+        <p class="caution">*NOTE: Our doctors are currently available to provide ESA approvals but this may not last, as doctors are callied to assist with patients affected.</p>
+        <h5><img src="" alt=""> Your ESA order includes:</h5>
+        <ul>
+            <li>ESA Approval from a licensed doctor, <strong>delivered within 48 hour.s</strong></li>
+            <li>ESA Approval on <strong>2nd pet FREE of charge.</strong></li>
+            <li>ESA Approval that includes <strong>doctor's license & signatures.</strong></li>
+            <li><strong>Full federal protection</strong> under both FHA and ACAA Laws.</li>
+            <li>Access to <strong>custom ESA forms</strong> for Landlords and Airlines.</li>
+            <li>Recommendation for taking pet <strong>out around town.</strong></li>
+            <li>Includes Full <strong>Money Back guarantee.</strong></li>
+        </ul>
+        <a href="#form" class="btn btn-submit">Order my ESA Now!</a>
+    </div>
     <div class="footer">
-        <img class="certifications" src="imgs/certifications.png" alt="">
+        <img src="imgs/supportpets-logo-300x65.png" alt="">
+        <div class="copyright">Copyright 2020 by Support Pets</div>
+        <div class="links">
+            <a href="/terms">Terms</a>
+            |
+            <a href="/privacy">Privacy</a>
+        </div>
     </div>
     
     <!-- Optional JavaScript -->
