@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)">
     <!-- <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)"> -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <title>Hello, world!</title>
 </head>
 <body>
@@ -76,7 +78,7 @@
     
     <div class="form-block">
         <div class="form" id="form">
-            <div class="tabs w-100 d-none d-lg-flex">            
+            <div class="tabs w-100 d-none">            
                 <a href="#name" class="tab active">
                     <img src="imgs/icon_step_1.png" alt="">
                     <div class="caption">Name</div>
@@ -107,6 +109,7 @@
                         <input id="phone" type="phone" class="form-control" type="text" name="phone">
                     </div>
                     <button class="btn btn-submit">Continue</button>
+                    <img class="certifications" src="imgs/Logos_Verify.png" alt="">
                 </form>
                 <!-- Second step form -->
                 <form id="payment" class="w-100 tab-pane fade">
@@ -142,38 +145,50 @@
                             <input id="cvc" class="form-control" type="text" name="cvc">
                         </div>
                     </div>
-                    <h5 class="secondary-color d-none d-lg-block mt-0 align-self-center text-center">* Avoid submitting orders multiple times</h5>
-                    <button class="btn btn-submit">Get my ESA freebies</button>
+                    <div class="dash-box">
+                        <label>
+                            <input type="checkbox" id="unlimited" name="unlimited">
+                            Yes, I want unlimited access
+                        </label>
+                        <p>
+                            <span class="underline">One time offer:</span>
+                            Get Unlimited custom, airline & landlord forms plus our live ESA experts by phone or email 7 days a week. <strong>Click Yes,</strong> to get these huge added benefits. Regularly <del>$39.00</del>. <strong>Today $8.99</strong>
+                        </p>
+                    </div>
+                    <button class="btn btn-submit">Get my ESA now! <span class="fas arrow-icon"></span></button>
+                    <span class="secondary-color d-block mt-0 align-self-center text-center">* This offer is for Employees, Friends and Family only.</span>
+                    <span class="secondary-color d-block mt-0 align-self-center text-center">* 1 per customer, avoid submitting twice</span>
+                    <img class="certifications" src="imgs/Logos_Verify.png" alt="">
                 </form>
             </div>
         </div>
         <div class="feedback">
             <h5 class="secondary-color">People love their ESA</h5>
             <div class="feedback-card">
-                <img src="" alt="" class="avatar">
+                <img src="imgs/Avatar_1.png" alt="" class="avatar">
                 <p class="name">Will D.</p>
                 <p class="place">Kansas City, MO</p>
                 <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
             </div>
             <div class="feedback-card">
-                <img src="" alt="" class="avatar">
+                <img src="imgs/Avatar_2.png" alt="" class="avatar">
                 <p class="name">Will D.</p>
                 <p class="place">Kansas City, MO</p>
                 <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
             </div>
             <div class="feedback-card">
-                <img src="" alt="" class="avatar">
+                <img src="imgs/Avatar_3.png" alt="" class="avatar">
                 <p class="name">Will D.</p>
                 <p class="place">Kansas City, MO</p>
                 <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
             </div>
         </div>
     </div>
-    <img src="imgs/partners.png" alt="" class="partners">
+    <img src="imgs/Cert_Logos.png" alt="" class="partners">
     <div class="bottom">
         <div class="double-line"></div>
         <p class="caution">*NOTE: Our doctors are currently available to provide ESA approvals but this may not last, as doctors are callied to assist with patients affected.</p>
-        <h5><img src="" alt=""> Your ESA order includes:</h5>
+        <h5><span class="fas doctor-icon"></span> Your ESA order includes:</h5>
         <ul>
             <li>ESA Approval from a licensed doctor, <strong>delivered within 48 hour.s</strong></li>
             <li>ESA Approval on <strong>2nd pet FREE of charge.</strong></li>
@@ -183,7 +198,7 @@
             <li>Recommendation for taking pet <strong>out around town.</strong></li>
             <li>Includes Full <strong>Money Back guarantee.</strong></li>
         </ul>
-        <a href="#form" class="btn btn-submit">Order my ESA Now!</a>
+        <a href="#form" class="btn btn-submit">Order my ESA Now! <span class="fas arrow-icon"></span></a>
     </div>
     <div class="footer">
         <img src="imgs/supportpets-logo-300x65.png" alt="">
