@@ -119,17 +119,13 @@ h1, h2, h3, h4 {
 }
 
 .form-block {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
     margin: 0 auto;
     box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.164);
 }
 .form {
     background-color: #FCFCFC;
-    flex: 3 1 0;
-    min-width: 0;
+    /* flex: 3 1 0; */
+    /* min-width: 0; */
 }
 h5 {
     margin: 0;
@@ -185,8 +181,8 @@ h5 {
 
 .feedback {
     padding: 30px;
-    flex: 2 1 0;
-    min-width: 250px;
+    /* flex: 2 1 0; */
+    /* min-width: 250px; */
 }
 .feedback-card {
     margin: 40px 0;
@@ -322,7 +318,6 @@ label {
 }
 .footer img {
     width: 230px;
-    filter: brightness(0) invert(1);
 }
 .copyright {
     color: white;
@@ -375,22 +370,18 @@ label {
 }
 
 .cc-container img {
-    width: 64px;
+    max-width: 64px;
+    width: 100%;
+    flex: 0 1 0;
 }
 @media (min-width: 450px) {
-    .form-block {
-        width: 80%;
-    }
     ul.order-content {
         padding: 20px 30px;
     }
 }
 @media (min-width: 768px) {
     .cc-container img {
-        width: 88px;
-    }
-    .form {
-        min-width: 500px;
+        max-width: 88px;
     }
     .cc-container .btn {
         margin-right: 20px;

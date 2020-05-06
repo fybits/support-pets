@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)">
-    <!-- <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)"> -->
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 576px)">
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
@@ -76,93 +76,95 @@
         <div class="strong">Today only $97.00</div>
     </div>
     
-    <div class="form-block">
-        <div class="form" id="form">
-            <!-- First step form -->
-            <form id="full" class="w-100">
-                <h5 class="secondary-color">Easily finish order below</h5>
-                <div class="form-group">
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" class="form-control" type="text" name="firstname">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name</label>
-                    <input id="lastname" class="form-control" type="text" name="lastname">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" class="form-control" type="text" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="state">State You Live In</label>
-                    <input id="state" type="text" class="form-control" type="text" name="state">
-                </div>
-                <h5 class="secondary-color">Lastly, submit card details</h5>
-                <div class="form-group">
-                    <div class="cc-container d-flex justify-content-between justify-content-md-start">
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
-                        <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+    <div class="container p-0">
+        <div class="form-block row d-flex flex-nowrap flex-column flex-md-row">
+            <div class="form col col-sm-12 col-md-7" id="form">
+                <!-- First step form -->
+                <form id="full" class="w-100">
+                    <h5 class="secondary-color">Easily finish order below</h5>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" class="form-control" type="text" name="firstname">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="card-number">Enter Card Number</label>
-                    <input id="card-number" class="form-control" type="text" name="card-number">
-                </div>
-                <div class="form-group d-lg-none">
-                    <label for="month">Month</label>
-                    <input id="month" class="form-control" type="text" name="month">
-                </div>
-                <div class="form-row">
-                    <div id="month" class="form-group col no-gutters d-none d-lg-block">
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" class="form-control" type="text" name="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" class="form-control" type="text" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State You Live In</label>
+                        <input id="state" type="text" class="form-control" type="text" name="state">
+                    </div>
+                    <h5 class="secondary-color">Lastly, submit card details</h5>
+                    <div class="form-group">
+                        <div class="cc-container d-flex justify-content-between justify-content-md-start">
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Visa.png" alt="visa"></button>
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Master Card.png" alt="master card"></button>
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_American Express.png" alt="american express"></button>
+                            <button type="button" class="btn p-0"><img class="border" src="imgs/CC_Discover.png" alt="discover"></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Enter Card Number</label>
+                        <input id="card-number" class="form-control" type="text" name="card-number">
+                    </div>
+                    <div class="form-group d-lg-none">
                         <label for="month">Month</label>
                         <input id="month" class="form-control" type="text" name="month">
                     </div>
-                    <div id="year" class="form-group col no-gutters">
-                        <label for="year">Year</label>
-                        <input id="year" class="form-control" type="text" name="year">
+                    <div class="form-row">
+                        <div id="month" class="form-group col no-gutters d-none d-lg-block">
+                            <label for="month">Month</label>
+                            <input id="month" class="form-control" type="text" name="month">
+                        </div>
+                        <div id="year" class="form-group col no-gutters">
+                            <label for="year">Year</label>
+                            <input id="year" class="form-control" type="text" name="year">
+                        </div>
+                        <div id="cvc" class="form-group col no-gutters">
+                            <label for="cvc">CVC/CVV</label>
+                            <input id="cvc" class="form-control" type="text" name="cvc">
+                        </div>
                     </div>
-                    <div id="cvc" class="form-group col no-gutters">
-                        <label for="cvc">CVC/CVV</label>
-                        <input id="cvc" class="form-control" type="text" name="cvc">
+                    <div class="dash-box">
+                        <label>
+                            <input type="checkbox" id="unlimited" name="unlimited">
+                            Yes, I want unlimited access
+                        </label>
+                        <p>
+                            <span class="underline">One time offer:</span>
+                            Get Unlimited custom, airline & landlord forms plus our live ESA experts by phone or email 7 days a week. <strong>Click Yes,</strong> to get these huge added benefits. Regularly <del>$39.00</del>. <strong>Today $8.99</strong>
+                        </p>
                     </div>
-                </div>
-                <div class="dash-box">
-                    <label>
-                        <input type="checkbox" id="unlimited" name="unlimited">
-                        Yes, I want unlimited access
-                    </label>
-                    <p>
-                        <span class="underline">One time offer:</span>
-                        Get Unlimited custom, airline & landlord forms plus our live ESA experts by phone or email 7 days a week. <strong>Click Yes,</strong> to get these huge added benefits. Regularly <del>$39.00</del>. <strong>Today $8.99</strong>
-                    </p>
-                </div>
-                <button class="btn btn-submit">Get my ESA Now! <span class="fas arrow-icon"></span></button>
-                <span class="secondary-color d-block mt-0 align-self-center text-center">* This offer is for Employees, Friends and Family only.</span>
-                <span class="secondary-color d-block mt-0 align-self-center text-center">* 1 per customer, avoid submitting twice</span>
-                <img class="certifications" src="imgs/Logos_Verify.png" alt="">
-            </form>
-        </div>
-        <div class="feedback">
-            <h5 class="secondary-color">People love their ESA</h5>
-            <div class="feedback-card">
-                <img src="imgs/Avatar_1.png" alt="" class="avatar">
-                <p class="name">Will D.</p>
-                <p class="place">Kansas City, MO</p>
-                <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
+                    <button class="btn btn-submit">Get my ESA Now! <span class="fas arrow-icon"></span></button>
+                    <span class="secondary-color d-block mt-0 align-self-center text-center">* This offer is for Employees, Friends and Family only.</span>
+                    <span class="secondary-color d-block mt-0 align-self-center text-center">* 1 per customer, avoid submitting twice</span>
+                    <img class="certifications" src="imgs/Logos_Verify.png" alt="">
+                </form>
             </div>
-            <div class="feedback-card">
-                <img src="imgs/Avatar_2.png" alt="" class="avatar">
-                <p class="name">Susan W.</p>
-                <p class="place">Chicago, IL</p>
-                <p class="text">My ESA letters came within 6 hours of ordering! Such quick delivery allowed me to sign a new lease in the high-rise apartment of my dreams that day.</p>
-            </div>
-            <div class="feedback-card">
-                <img src="imgs/Avatar_3.png" alt="" class="avatar">
-                <p class="name">Tiffany Y.</p>
-                <p class="place">Narragansett, RI</p>
-                <p class="text">The only way my fear of flying could be calmed was if my dog could go with. Now, with ESA documentation, I can bring him home with me every time.</p>
+            <div class="feedback col col-sm-12 col-md-5">
+                <h5 class="secondary-color">People love their ESA</h5>
+                <div class="feedback-card">
+                    <img src="imgs/Avatar_1.png" alt="" class="avatar">
+                    <p class="name">Will D.</p>
+                    <p class="place">Kansas City, MO</p>
+                    <p class="text">Getting both my housing and travel ESA Approval has saved me from arguing with my landlords and airport personnel that I need my dog. Mille with me.</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="imgs/Avatar_2.png" alt="" class="avatar">
+                    <p class="name">Susan W.</p>
+                    <p class="place">Chicago, IL</p>
+                    <p class="text">My ESA letters came within 6 hours of ordering! Such quick delivery allowed me to sign a new lease in the high-rise apartment of my dreams that day.</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="imgs/Avatar_3.png" alt="" class="avatar">
+                    <p class="name">Tiffany Y.</p>
+                    <p class="place">Narragansett, RI</p>
+                    <p class="text">The only way my fear of flying could be calmed was if my dog could go with. Now, with ESA documentation, I can bring him home with me every time.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -183,7 +185,7 @@
         <a href="#form" class="btn btn-submit">Order my ESA Now! <span class="fas arrow-icon"></span></a>
     </div>
     <div class="footer">
-        <img src="imgs/supportpets-logo-300x65.png" alt="">
+        <img src="imgs/supportpets-logo-white.png" alt="">
         <div class="copyright">Copyright 2020 by Support Pets</div>
         <div class="links">
             <a href="/terms">Terms</a>

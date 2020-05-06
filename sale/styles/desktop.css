@@ -13,10 +13,3 @@
 .bottom p.caution {
     display: inline;
 }
-
-@media (min-width: 1024px) {
-    .form-block {
-        flex-direction: row;
-        width: 55%;
-    }
-}
