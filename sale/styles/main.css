@@ -87,15 +87,6 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-.double-line {
-    border-top: 2px solid rgba(153, 158, 158, 0.15);
-    border-bottom: 2px solid rgba(153, 158, 158, 0.15);
-    height: 2px;
-    box-sizing: content-box;
-    width: 100%;
-    margin: 16px 0;
-}
-
 .info ul.order-content {
     font-family: 'Roboto', sans-serif;
     list-style: none;
@@ -212,7 +203,7 @@ h5 {
 
 .partners {
     margin: 40px auto;
-    max-width: 640px;
+    max-width: 800px;
     padding: 0 36px;
     width: 100%;
     display: block;
@@ -225,8 +216,8 @@ h5 {
     padding: 0 36px;
     text-align: center;
 }
-.bottom .double-line {
-    margin-bottom: 32px;
+.container > .line {
+    margin-bottom: 30px;
 }
 .bottom p {
     display: block;
