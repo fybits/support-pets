@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
 
 .subheader {
     background-color: #364C61;
-    padding: 20px 36px;
+    padding: 20px 0;
 }
 .subheader span {
     display: block;
@@ -30,9 +30,9 @@ h1, h2, h3, h4 {
     color: #6FD8DE;
 }
 .line {
-    border-bottom: 2px solid #63768780;
+    border-bottom: 2px solid #c9c9c9be;
     width: 100%;
-    margin: 10px auto;
+    margin: 16px auto;
 }
 .subheader h1 {
     text-transform: capitalize;
@@ -50,11 +50,11 @@ h1, h2, h3, h4 {
 
 .info {
     background-color: white;
-    padding: 30px 0;
+    padding-top: 16px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
 }
 .info .strong {
     color:#364C61;
@@ -67,19 +67,22 @@ h1, h2, h3, h4 {
     justify-content: space-evenly;
     align-items: center;
     height: 75px;
-    width: 300px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 16px;
 }
 .digits {
     padding: 15px 0px 18px 0;
     color: #EB1A3C;
 }
 .digits .content {
-    font-size: 35px;
+    font-size: 3em;
     font-weight: 500;
     line-height: 40px;
 }
 .caption {
-    font-size: 11px;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
 }
@@ -103,7 +106,7 @@ h1, h2, h3, h4 {
     border-bottom: 3px solid #8A9AA8;
 }
 .info ul.order-content li {
-    padding: 2px 0;
+    padding: 8px 0;
     display: flex;
     font-size: 17px;
     justify-content: space-between;
@@ -126,8 +129,7 @@ h1, h2, h3, h4 {
 }
 .form {
     background-color: #FCFCFC;
-    /* flex: 3 1 0; */
-    /* min-width: 0; */
+    padding: 0;
 }
 h5 {
     margin: 0;
@@ -160,6 +162,7 @@ h5 {
     text-transform: capitalize;
     align-items: center;
     user-select: none;
+    cursor: pointer;
 }
 .dash-box label input {
     -webkit-appearance: none;
@@ -168,6 +171,7 @@ h5 {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .dash-box label input:checked {
     background-image: linear-gradient(to right, #323232, #323232);
