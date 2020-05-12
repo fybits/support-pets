@@ -3,6 +3,19 @@ body {
     color: rgb(54, 76, 97);
 }
 
+.subheader .dotted-line {
+    border-bottom: 2px dotted #637687 !important;
+    max-width: 555px;
+}
+.double-line {
+    border-top: 2px solid rgba(153, 158, 158, 0.15) !important;
+    border-bottom: 2px solid rgba(153, 158, 158, 0.15) !important;
+    height: 2px;
+    box-sizing: content-box;
+    width: 100%;
+    max-width: 555px;
+    margin: 16px 0;
+}
 .m28-30 {
     margin-top: 28px !important;
     margin-bottom: 28px !important;
