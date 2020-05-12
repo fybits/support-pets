@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(54, 76, 97);
 }
 
@@ -76,7 +76,7 @@ h1, h2, h3, h4 {
     justify-content: space-evenly;
     align-items: center;
     height: 75px;
-    margin-top: 18px;
+    margin-top: 8px;
     width: 100%;
     max-width: 350px;
 }
@@ -248,6 +248,10 @@ form {
 }
 .form-group {
     margin-bottom: 20px;
+}
+.form-group label {
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-control {
