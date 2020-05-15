@@ -237,7 +237,6 @@ h5 {
 
 .bottom {
     margin: 0 auto;
-    padding-top: 16px;
     text-align: center;
 }
 .bottom .caution {
@@ -248,7 +247,6 @@ h5 {
 }
 .bottom h5 {
     text-align: left;
-    margin-top: 40px;
 }
 .bottom ul {
     text-align: left;

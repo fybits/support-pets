@@ -35,13 +35,13 @@
 .form h5 {
     text-align: left;
 }
-
+.bottom {
+    padding-top: 16px;
+}
 .bottom p.caution {
     display: inline;
 }
 .bottom h5 {
-    margin-left: 36px;
-}
-.bottom ul {
-    margin-left: 52px;
+    padding-top: 16px;
+    margin-top: 40px;
 }
