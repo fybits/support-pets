@@ -4,37 +4,43 @@
 }
 
 .line {
-    margin: 12px auto;
+    margin: 15px auto;
 }
 
 .m28-30 {
-    margin-top: 28px !important;
-    margin-bottom: 28px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 .p28-30 {
-    padding-top: 28px !important;
-    padding-bottom: 28px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
 }
 
 .info .strong {
     font-size: 22px;
 }
 .strong.regular-price {
-    font-size: 28px;
+    font-size: 30px;
 }
-
 .info ul.order-content li {
     font-size: 20px;
     padding: 8px 0;
 }
-
+.info ul.order-content li:last-child {
+    padding-bottom: 0;
+}
 .form-block-container {
     margin-top: 20px;
+}
+
+form {
+    padding: 28px 40px;
 }
 
 .form h5 {
     text-align: left;
 }
+
 .bottom {
     padding-top: 16px;
 }
@@ -44,4 +50,7 @@
 .bottom h5 {
     padding-top: 16px;
     margin-top: 40px;
+}
+.btn-submit.m28-30 {
+    margin: 40px 0 !important;
 }
