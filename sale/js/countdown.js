@@ -21,7 +21,7 @@ setInterval(()=> {
                 num = Math.floor(time%60);
                 break
         }
-        digits.children().first().text(String(num).padStart(2, '0'));
+        digits.children('.content').text(String(num).padStart(2, '0'));
         digits = digits.next();
     }
     time--;
