@@ -3,13 +3,13 @@
 const countdown = $('.countdown');
 let time = countdown.data('start-time');
 
-setInterval(()=> {
+const interval = setInterval(()=> {
     let digits = countdown.children();
     while (digits.length > 0) {
         let num = 0;
         switch (digits.data('scale')) {
             case 'd':
-                num = Math.floor((time/360/24)%99);
+                num = Math.floor((time/3600/24)%99);
                 break
             case 'h':
                 num = Math.floor((time/3600)%24);
@@ -23,6 +23,9 @@ setInterval(()=> {
         }
         digits.children('.content').text(String(num).padStart(2, '0'));
         digits = digits.next();
+    }
+    if (time === 0) {
+        clearInterval(interval);
     }
     time--;
 }, 1000);
