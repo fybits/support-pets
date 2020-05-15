@@ -10,19 +10,19 @@ body {
 .double-line {
     border-top: 2px solid rgba(153, 158, 158, 0.15) !important;
     border-bottom: 2px solid rgba(153, 158, 158, 0.15) !important;
-    height: 2px;
+    height: 1px;
     box-sizing: content-box;
     width: 100%;
     max-width: 555px;
     margin: 16px 0;
 }
 .m28-30 {
-    margin-top: 28px !important;
-    margin-bottom: 28px !important;
+    margin-top: 26px !important;
+    margin-bottom: 26px !important;
 }
 .p28-30 {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
 }
 
 .header {
@@ -56,7 +56,7 @@ h1, h2, h3, h4 {
 .line {
     border-bottom: 2px solid #c9c9c9be;
     width: 100%;
-    margin: 18px auto;
+    margin: 15px auto;
 }
 .subheader h1 {
     text-transform: capitalize;
@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
     font-weight: 700;
     font-size: 37px;
     color: white;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 .subheader .off {
     color:white;
@@ -88,13 +88,11 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 75px;
     margin-top: 8px;
     width: 100%;
     max-width: 350px;
 }
 .digits {
-    padding: 15px 0px 18px 0;
     color: #EB1A3C;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -132,7 +130,7 @@ h1, h2, h3, h4 {
 }
 .info .regular-price {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: line-through;
 }
 
@@ -191,6 +189,7 @@ h5 {
     background-size: 16px 16px;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .dash-box p {
@@ -201,13 +200,21 @@ h5 {
 
 .feedback {
     padding: 28px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback h5 {
+    margin-bottom: 30px;
 }
 .feedback-card {
-    margin: 40px 0;
+    margin-bottom: 40px;
+    max-width: 345px;
 }
 .feedback-card img.avatar {
     display: block;
-    margin: 16px auto;
+    margin: 0 auto;
+    margin-bottom: 16px;
     width: 40px;
     height: 40px;
     border-radius: 25px;
@@ -230,6 +237,7 @@ h5 {
 
 .bottom {
     margin: 0 auto;
+    padding-top: 16px;
     text-align: center;
 }
 .bottom .caution {
@@ -244,12 +252,25 @@ h5 {
 }
 .bottom ul {
     text-align: left;
-    margin: 0 24px;
+    margin-right: 24px;
     margin-top: 28px;
     padding-left: 0;
+    list-style: none;
 }
 .bottom ul li {
     margin: 12px 0;
+    font-size: 16px;
+}
+li::before {
+    content: "";
+    display: inline-block;
+    background-color: rgb(54, 76, 97);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 8px;
 }
 .bottom .btn {
     max-width: 370px;
@@ -389,7 +410,7 @@ label {
 }
 @media (min-width: 450px) {
     ul.order-content {
-        padding: 20px 30px;
+        padding: 20px 30px !important;
     }
 }
 @media (min-width: 768px) {

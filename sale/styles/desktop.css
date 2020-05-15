@@ -1,14 +1,19 @@
 .subheader h1 {
     font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.line {
+    margin: 12px auto;
 }
 
 .m28-30 {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 28px !important;
+    margin-bottom: 28px !important;
 }
 .p28-30 {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
 }
 
 .info .strong {
@@ -33,4 +38,10 @@
 
 .bottom p.caution {
     display: inline;
+}
+.bottom h5 {
+    margin-left: 36px;
+}
+.bottom ul {
+    margin-left: 52px;
 }
