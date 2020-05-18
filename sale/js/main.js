@@ -12,6 +12,19 @@ function disableHiddenInputs() {
     });
 }
 
+function populateStates() {
+  let stateSelect = $('select#state');
+  fetch('http://104.248.191.131/sql/sql_v_us_states_www_01.php', { method: 'GET', mode: 'no-cors'})
+    .then((response) => response.json())
+    .then((json) => {
+      let options = json.reduce((total, item) => {
+        return total + `<option>${item.state_code}</option>\n`;
+      }, '');
+      stateSelect.html(options);
+    })
+    .catch(console.error);
+}
+
 $(() => {
   $('.tab').on('click', (event) => {
     event.preventDefault();
@@ -27,6 +40,7 @@ $(() => {
       tabContent.siblings().removeClass('active');
       tabContent.siblings().removeClass('show');
     }
+
   });
   $('.form').on('submit', (event) => {
     event.preventDefault();
@@ -52,6 +66,7 @@ $(() => {
   });
   $('input[type=phone]').mask("(999) 999-9999");
   $('input#card-number').mask("9999 9999 9999 9999");
+  populateStates();
 });
 
 window.addEventListener('resize', disableHiddenInputs)
