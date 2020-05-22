@@ -18,7 +18,7 @@ function populateStates() {
     .then((response) => response.json())
     .then((json) => {
       let options = json.reduce((total, item) => {
-        return total + `<option>${item.state_code}</option>\n`;
+        return total + `<option "value"=${item.state_code}>${item.state_name}</option>\n`;
       }, '');
       stateSelect.html(options);
     })
