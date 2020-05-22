@@ -6,6 +6,10 @@
 .line {
     margin: 15px auto;
 }
+.partners-line {
+    border-top: none !important;
+    max-width: none;
+}
 
 .m28-30 {
     margin-top: 30px !important;
