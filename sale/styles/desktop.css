@@ -44,16 +44,25 @@ form {
 .form h5 {
     text-align: left;
 }
-
+.fas.doctor-icon {
+    margin-right: 5px;
+}
 .bottom {
-    padding-top: 16px;
+    padding-top: 20px;
 }
 .bottom p.caution {
     display: inline;
 }
+.bottom ul li {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+.bottom ul li::before {
+    left: 0px;
+}
 .bottom h5 {
     padding-top: 16px;
-    margin-top: 40px;
+    margin-top: 36px;
 }
 .btn-submit.m28-30 {
     margin: 40px 0 !important;
