@@ -243,7 +243,7 @@ h5 {
     text-align: center;
 }
 .bottom .caution {
-    display: block;
+    display: inline;
     letter-spacing: 0.02em;
     padding: 6px;
     font-weight: bold;
@@ -252,6 +252,7 @@ h5 {
 }
 .bottom h5 {
     text-align: left;
+    margin-top: 28px;
 }
 .bottom ul {
     text-align: left;
